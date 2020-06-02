@@ -1,1 +1,1 @@
-add primeiro commit [v]
+corrige bug estranho hurr

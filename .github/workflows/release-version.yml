@@ -28,11 +28,9 @@ jobs:
           sed -i -E 's/^feat(\(.*\))?(!)?:/- :sparkles:/g' RELEASE_NOTE.md
           sed -i -E 's/^fix(\(.*\))?(!)?:/- :bug:/g' RELEASE_NOTE.md
           sed -i -E 's/^docs(\(.*\))?(!)?:/- :pencil:/g' RELEASE_NOTE.md
-          sed -i -E 's/^style(\(.*\))?(!)?:/- :lipstick:/g' RELEASE_NOTE.md
-          sed -i -E 's/^chore(\(.*\))?(!)?:/- :gear:/g' RELEASE_NOTE.md
-          sed -i -E 's/^refactor(\(.*\))?(!)?:/- :ok_hand:/g' RELEASE_NOTE.md
-          sed -i -E 's/^improve(\(.*\))?(!)?:/- :zap:/g' RELEASE_NOTE.md
-          sed -i -E 's/^test(\(.*\))?(!)?:/- :white_check_mark:/g' RELEASE_NOTE.md
+          sed -i -E 's/^chore(\(.*\))?(!)?:/- :tv:/g' RELEASE_NOTE.md
+          sed -i -E 's/^improve(\(.*\))?(!)?:/- :100:/g' RELEASE_NOTE.md
+          sed -i -E 's/^test(\(.*\))?(!)?:/- :cop:/g' RELEASE_NOTE.md
           sed -i -E 's/^[^-].*[(\(.*\))?(!)?:]/- :package:/g' RELEASE_NOTE.md
           sed -i -E 's/^[^-]/- :package: &/g' RELEASE_NOTE.md
           RELEASE_NOTE=$(cat RELEASE_NOTE.md)

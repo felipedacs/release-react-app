@@ -5,15 +5,19 @@ NUMBER_VERSION=$(echo $VERSION | sed -e 's/v//g')
 NEW_TAG=$((NUMBER_VERSION+1))
 NEW_TAG=$(echo "v$NEW_TAG")
 
+# sugestões:
+# https://dev.to/folke/emojify-your-conventional-commits-with-devmoji-4b3l
+# https://gitmoji.carloscuesta.me/
+# https://gist.github.com/parmentf/035de27d6ed1dce0b36a
+# https://github.com/dannyfritz/commit-message-emoji
+# https://github.com/cooperka/emoji-commit-messages
+# https://robinpokorny.github.io/git3moji/
+
 commits=(
     "add primeiro commit [$NEW_TAG]"
-    "style: corrige indent"
-    "style(dhushd): corrige indent"
     "corrige bug estranho hurr"
     "chore: add bla"
     "chore(dhushd): add bla"
-    "refactor: add y"
-    "refactor(dhushd): add outro y"
     "improve: cria x"
     "improve(dhushd): cria x"
     "test: add opt"

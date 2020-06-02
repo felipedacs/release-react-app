@@ -1,9 +1,16 @@
 #!/usr/bin/env bash
 
 VERSION=`git describe --abbrev=0 --tags`
+echo $VERSION
+
 NUMBER_VERSION=$(echo $VERSION | sed -e 's/v//g')
+echo $NUMBER_VERSION
+
 NEW_TAG=$((NUMBER_VERSION+1))
+echo $NEW_TAG
+
 NEW_TAG=$(echo "v$NEW_TAG")
+echo $NEW_TAG
 
 # sugestões:
 # https://dev.to/folke/emojify-your-conventional-commits-with-devmoji-4b3l

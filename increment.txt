@@ -1,1 +1,1 @@
-feat(dhushd): add outra funcionalidade
+fix: remove x

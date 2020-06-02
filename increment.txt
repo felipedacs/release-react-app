@@ -1,1 +1,1 @@
-fix(dhushd): remove outro x
+docs: add funcionalidade

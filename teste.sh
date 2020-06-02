@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
+VERSION=`git describe --abbrev=0 --tags`
+NUMBER_VERSION=$(echo $VERSION | sed -e 's/v//g')
+NEW_TAG=$((NUMBER_VERSION+1))
+NEW_TAG=$(echo "v$NEW_TAG")
+
 commits=(
+    "add primeiro commit [$NEW_TAG]"
     "style: corrige indent"
     "style(dhushd): corrige indent"
     "corrige bug estranho hurr"
@@ -20,6 +26,7 @@ commits=(
     "fix(dhushd): remove outro x"
     "docs: add funcionalidade"
     "docs(dhushd): add outra funcionalidade"
+    "add ultimo commit [$NEW_TAG]"
 )
 
 for m in "${commits[@]}"
@@ -29,10 +36,6 @@ do
     git commit -s -m "$m"
 done
 
-VERSION=`git describe --abbrev=0 --tags`
-NUMBER_VERSION=$(echo $VERSION | sed -e 's/v//g')
-NEW_TAG=$((NUMBER_VERSION+1))
-NEW_TAG=$(echo "v$NEW_TAG")
 
 git tag $NEW_TAG
 git push origin master --tags
